@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +35,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Firebase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SplashBasic.cs\SplashBasic.cs\bin\Debug\Firebase.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Auth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SplashBasic.cs\SplashBasic.cs\bin\Debug\Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Storage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SplashBasic.cs\SplashBasic.cs\bin\Debug\Firebase.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +68,133 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analytics.Designer.cs">
+      <DependentUpon>Analytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calender.Designer.cs">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConactUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConactUs.Designer.cs">
+      <DependentUpon>ConactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EducationDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EducationDB.Designer.cs">
+      <DependentUpon>EducationDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EduDBFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EduDBFinance.Designer.cs">
+      <DependentUpon>EduDBFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EduDBStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EduDBStud.Designer.cs">
+      <DependentUpon>EduDBStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EduDBUni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EduDBUni.Designer.cs">
+      <DependentUpon>EduDBUni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBConfig.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HaelthDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaelthDB.Designer.cs">
+      <DependentUpon>HaelthDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAdminReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAdminReg.Designer.cs">
+      <DependentUpon>NewAdminReg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegDB.cs" />
+    <Compile Include="SalesDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesDB.Designer.cs">
+      <DependentUpon>SalesDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SocialDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialDB.Designer.cs">
+      <DependentUpon>SocialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spash.Designer.cs">
+      <DependentUpon>Spash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrafficDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrafficDB.Designer.cs">
+      <DependentUpon>TrafficDB.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Analytics.resx">
+      <DependentUpon>Analytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calender.resx">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConactUs.resx">
+      <DependentUpon>ConactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EducationDB.resx">
+      <DependentUpon>EducationDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EduDBFinance.resx">
+      <DependentUpon>EduDBFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EduDBStud.resx">
+      <DependentUpon>EduDBStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EduDBUni.resx">
+      <DependentUpon>EduDBUni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaelthDB.resx">
+      <DependentUpon>HaelthDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAdminReg.resx">
+      <DependentUpon>NewAdminReg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +203,23 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SalesDB.resx">
+      <DependentUpon>SalesDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialDB.resx">
+      <DependentUpon>SocialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spash.resx">
+      <DependentUpon>Spash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrafficDB.resx">
+      <DependentUpon>TrafficDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +232,201 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-key.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combo-chart %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mail.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact-us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanical-gears-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanical-gears-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact-us1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google-analytics1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mail1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-key1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combo-chart %281%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combo-chart-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combo-chart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sand-timer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-wind %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-wind.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-bag %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-computing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wave-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-bag %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\budget.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50399-dashboard.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down-arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
